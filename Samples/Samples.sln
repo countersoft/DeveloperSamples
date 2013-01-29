@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimerApp", "TimerApp\TimerApp.csproj", "{7715EB07-24A4-4F3D-B43D-18019F03984C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EA857820-59B4-4687-B0C8-1A9705A2C51A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventApp", "EventApp\EventApp.csproj", "{4030047D-1915-4638-81A7-6453FEAC0A7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIApp", "UIApp\UIApp.csproj", "{D8B6AC1E-55C1-4275-ADB7-F804371D6017}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7715EB07-24A4-4F3D-B43D-18019F03984C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7715EB07-24A4-4F3D-B43D-18019F03984C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7715EB07-24A4-4F3D-B43D-18019F03984C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7715EB07-24A4-4F3D-B43D-18019F03984C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4030047D-1915-4638-81A7-6453FEAC0A7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4030047D-1915-4638-81A7-6453FEAC0A7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4030047D-1915-4638-81A7-6453FEAC0A7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4030047D-1915-4638-81A7-6453FEAC0A7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8B6AC1E-55C1-4275-ADB7-F804371D6017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8B6AC1E-55C1-4275-ADB7-F804371D6017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8B6AC1E-55C1-4275-ADB7-F804371D6017}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8B6AC1E-55C1-4275-ADB7-F804371D6017}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

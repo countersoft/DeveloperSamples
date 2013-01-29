@@ -1,0 +1,19 @@
+﻿<div id="my-app-container">
+    <input id="my-value" name="my-value" type="text" value="@Model.Value" />
+    <button id="app-submit" value="Save"></button>
+</div>
+
+<script type="text/javascript">
+    $("#app-submit", '#my-app-container').click(function (e) {
+
+        $.ajax({
+            type: "POST",
+            url: csVars.Url + 'apps/my-ui-app/@Model.IssueId',
+            data: { myValue: $("#my-value").val() },
+            success: function (response) {
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+            }
+        });
+    });
+</script>
