@@ -12,7 +12,7 @@ namespace TimerApp
         {
            // app logic for run event
 
-            LogDebugMessage("Your debug message here");
+            LogDebugMessage("Started Run");
 
             return true;
         }
@@ -30,7 +30,7 @@ namespace TimerApp
                 && data.Value.IntervalInHours.GetValueOrDefault() == 0 
                 && data.Value.IntervalInMinutes.GetValueOrDefault() == 0))
             {
-                // Sleep for 5 minutes is default
+                // Default interval for timer app
                 return new TimerJobSchedule(5);
             }
 
@@ -44,7 +44,7 @@ namespace TimerApp
 
         public override string Description
         {
-            get { return "Sample timer app"; }
+            get { return "My timer app"; }
         }
 
         public override string Title
