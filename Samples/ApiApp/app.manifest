@@ -1,0 +1,12 @@
+﻿<app>
+    <guid>9F3AB3A7-13A9-433A-8BBF-4E10730C6A90</guid>
+    <name>GetUsersApiKey</name>
+    <description>GetUsersApiKey</description>
+    <version-major>1</version-major>
+    <version-minor>0</version-minor>
+    <version-patch>16</version-patch>
+    <publisher>Countersoft</publisher>
+    <released>2012-11-07T11:31:00Z</released>
+    <javascript></javascript>
+    <debug>false</debug>
+</app>

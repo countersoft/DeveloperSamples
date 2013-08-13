@@ -81,6 +81,18 @@
     <None Include="views\my-view.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>del $(ProjectDir)$(TargetName).dll 2&gt;null 1&gt;null
+copy $(TargetDir)$(TargetName).dll $(ProjectDir)$(TargetName).dll
+
+del $(ProjectDir)$(TargetName).pdb
+rem copy $(TargetDir)$(TargetName).pdb $(ProjectDir)$(TargetName).pdb
+
+del $(ProjectDir)$(TargetName).zip
+$(SolutionDir)Apps\7za.exe a $(ProjectDir)$(TargetName).zip $(ProjectDir)*.dll $(ProjectDir)*.pdb $(ProjectDir)*.manifest
+
+</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Javascript API", "Javascrip
 		gemini.js = gemini.js
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiApp", "ApiApp\ApiApp.csproj", "{F74CDDF2-CFDF-4595-BCBD-2E43D762CCE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{D8B6AC1E-55C1-4275-ADB7-F804371D6017}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8B6AC1E-55C1-4275-ADB7-F804371D6017}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8B6AC1E-55C1-4275-ADB7-F804371D6017}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F74CDDF2-CFDF-4595-BCBD-2E43D762CCE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F74CDDF2-CFDF-4595-BCBD-2E43D762CCE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F74CDDF2-CFDF-4595-BCBD-2E43D762CCE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F74CDDF2-CFDF-4595-BCBD-2E43D762CCE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
