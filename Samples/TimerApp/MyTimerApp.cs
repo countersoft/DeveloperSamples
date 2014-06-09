@@ -3,9 +3,14 @@ using Countersoft.Foundation.Commons.Extensions;
 using Countersoft.Gemini.Contracts.Business;
 using Countersoft.Gemini.Infrastructure.Managers;
 using Countersoft.Gemini.Infrastructure.TimerJobs;
+using Countersoft.Gemini.Extensibility.Apps;
 
 namespace TimerApp
 {
+    [AppType(AppTypeEnum.Timer),
+    AppGuid("926A9148-CA7E-42C7-BFEA-47F861157BC7"),
+    AppName("My Timer App"),
+    AppDescription("Sample timer app")]
     public class MyTimerApp : TimerJob 
     {
         public override bool Run(IssueManager issueManager)
@@ -24,7 +29,7 @@ namespace TimerApp
 
         public override TimerJobSchedule GetInterval(IGlobalConfigurationWidgetStore dataStore)
         {
-            var data = dataStore.Get<TimerJobSchedule>(AppId);
+            var data = dataStore.Get<TimerJobSchedule>(AppGuid);
 
             if (data == null || data.Value == null || (data.Value.Cron.IsEmpty() 
                 && data.Value.IntervalInHours.GetValueOrDefault() == 0 
@@ -35,21 +40,6 @@ namespace TimerApp
             }
 
             return data.Value;
-        }
-
-        public override string AppId
-        {
-            get { return "8b3130e-af4d-45eb-9472-2d6bb3e04d4c"; }
-        }
-
-        public override string Description
-        {
-            get { return "My timer app"; }
-        }
-
-        public override string Title
-        {
-            get { return "My Timer App"; }
         }
     }
 }
